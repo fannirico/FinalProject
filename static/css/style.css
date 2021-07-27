@@ -1,10 +1,12 @@
 /* Write custom CSS styling here */
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&display=swap');
+
 form { 
 margin: 0 auto; 
 width:500px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
 
 body {
   margin:0px;
@@ -24,6 +26,7 @@ body {
 #flip {
   height:50px;
   overflow:hidden;
+  font-family: 'Arima Madurai', cursive;
 }
 #flip > div > div {
   color: #D1FFC6;
@@ -31,6 +34,7 @@ body {
   height:45px;
   margin-bottom:45px;
   display:inline-block;
+  
 }
 #flip div:first-child {
   animation: show 6s linear;
@@ -59,14 +63,19 @@ body {
   80% {opacity: 1;}
   100% {opacity: 1;}
 }
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&display=swap');
 #qheader {
     height: 200px;
-    background-color:#BFB5AF;
+    background-color:#FFFFEB;
 }
 .col-12 {
     padding-top: 100px;
     margin: auto;
-    color: 
+    color: #3A405A;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 30px;
 }
-
-B1C1C0
+.button{
+    width:auto;
+    height: auto;
+}

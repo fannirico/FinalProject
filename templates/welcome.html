@@ -1,22 +1,18 @@
 {% extends 'base.html'%}
 
+{% block meta%} 
+<meta http-equiv="refresh" content="5;url=/pt1.html" />  
+{% endblock meta%}
+
 {% block title%}
-page1
+welcome
 {% endblock title%}
 
-
-
 {% block content%}
-<div id="qheader">
-    <div class = "col-12">
-        given you are in a completely new environment, which is preferable to you?
-    </div>
+<div id="container">
+  <div id="flip">
+    <div><div>your personality test will begin now</div></div>
+    <div><div>welcome, {{name}}</div></div>
+  </div>
 </div>
-
-<div class ="row">
-    <div class = "col-6"> skfs </div>
-    <div class = "col-6"> sfsf</div>
-</div>
-
-
 {% endblock content%}

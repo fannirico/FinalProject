@@ -30,3 +30,7 @@ def welcome():
 @app.route('/page1', methods=["POST", "GET"])
 def page1():
     return render_template('pt1.html')
+
+@app.route('/pt1', methods=["POST"])
+def pt1():
+    return render_template('pt1.html')
