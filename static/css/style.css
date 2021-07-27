@@ -1,1 +1,72 @@
 /* Write custom CSS styling here */
+form { 
+margin: 0 auto; 
+width:500px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
+
+body {
+  margin:0px;
+  text-align:center;
+  background-color: #95B46A;
+}
+#container {
+  text-transform: lowercase;
+  font-size:35px;
+  font-weight: bold;
+  padding-top: 10px;  
+  margin-top: 275px;
+  width: 100%;
+  bottom:45%;
+  display:block;
+}
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+#flip > div > div {
+  color: #D1FFC6;
+  padding:0px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+#flip div:first-child {
+  animation: show 6s linear;
+}
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+}
+#input {
+  border: 1px solid #D1FFC6;
+  background-color: #D1FFC6;
+  animation-name: input;
+  animation-duration:12s;
+  opacity: 1;
+}
+@keyframes input{
+  0% {opacity: 0;}
+  20% {opacity: 0;}
+  40% {opacity: 0;}
+  60% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 1;}
+}
+#qheader {
+    height: 200px;
+    background-color:#BFB5AF;
+}
+.col-12 {
+    padding-top: 100px;
+    margin: auto;
+    color: 
+}
+
+B1C1C0

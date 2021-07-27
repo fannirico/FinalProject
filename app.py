@@ -20,3 +20,13 @@ def index():
     data = {
     }
     return render_template('index.html', data=data)
+
+@app.route('/welcome', methods=["POST"])
+def welcome():
+    form=request.form
+    name= form["name"]
+    return render_template('welcome.html', name=name)
+
+@app.route('/page1', methods=["POST", "GET"])
+def page1():
+    return render_template('pt1.html')

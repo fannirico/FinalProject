@@ -1,11 +1,25 @@
 {% extends 'base.html'%}
 
 {% block title%}
-
+homepage
 {% endblock title%}
 
 
 
 {% block content%}
+<div id="container">
+  <div id="flip">
+    <div><div>please enter your name below</div></div>
+    <div><div>hello</div></div>
+  </div>
+</div>
+
+<div id="container2">
+   <form method="POST" action="/welcome">
+        <input id=input type="text" name="name">
+    </form>
+</div>
+
+
 
 {% endblock content%}
