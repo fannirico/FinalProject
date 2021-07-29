@@ -1,7 +1,7 @@
 {% extends 'base.html'%}
 
 {% block meta%} 
-<meta http-equiv="refresh" content="8;url=/" />  
+<meta http-equiv="refresh" content="8;url=/results" />  
 {% endblock meta%}
 
 {% block title%}
@@ -11,8 +11,8 @@ finish
 {% block content%}
 <div id="container">
   <div id="flip">
-    <div><div>here are your results</div></div>
-    <div><div>thank you for completing the test, {{name}}</div></div>
+    <!-- <div><div>here are your results</div></div> -->
+    <div><div>thank you for completing the test, {{data.name}}</div></div>
   </div>
 </div>
 {% endblock content%}

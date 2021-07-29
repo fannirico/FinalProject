@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 
 form { 
 margin: 0 auto; 
@@ -11,7 +12,7 @@ width:500px;
 body {
   margin:0px;
   text-align:center;
-  background-color: #95B46A;
+  background-color: #79B3A0;
 }
 #container {
   text-transform: lowercase;
@@ -29,7 +30,7 @@ body {
   font-family: 'Arima Madurai', cursive;
 }
 #flip > div > div {
-  color: #D1FFC6;
+  color: #BBDBD1;
   padding:0px 12px;
   height:45px;
   margin-bottom:45px;
@@ -49,8 +50,8 @@ body {
   99.99% {margin-top:0px;}
 }
 #input {
-  border: 1px solid #D1FFC6;
-  background-color: #D1FFC6;
+  border: 1px solid #BBDBD1;
+  background-color: #BBDBD1;
   animation-name: input;
   animation-duration:12s;
   opacity: 1;
@@ -66,12 +67,12 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&display=swap');
 #qheader {
     height: 200px;
-    background-color:#FFFFEB;
+    background-color:#8F8F8F;
 }
 .col-12 {
     padding-top: 100px;
     margin: auto;
-    color: #3A405A;
+    color: #FCECEB;
     font-family: 'Asap Condensed', sans-serif;
     font-size: 30px;
 }
@@ -79,3 +80,64 @@ body {
     width:auto;
     height: auto;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+p {
+  border-right: solid 3px #79B3A0 ;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 18px;
+  color: rgba(255,255,255,.70);
+  margin: 0 auto;
+}
+
+p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 1000px;}
+}
+
+.patterns {
+  height: 50vh;
+  margin-top: -130px;
+
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #DBA2B4;
+  fill: #D4D2D2;
+  font-size: 100px;
+  font-weight: 700;
+  stroke-width: 3;
+  animation: textAnimate 5s;
+  
+}
+
+/* @keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill:#D4D2D2;
+  }
+} */
+
+

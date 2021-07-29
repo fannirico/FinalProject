@@ -4,6 +4,7 @@ from flask import render_template
 from flask import request
 from flask import url_for
 from flask import redirect
+from flask import session
 
 ## Additional Imports
 import datetime as dt
@@ -12,6 +13,7 @@ import model as model
 # -- Initialization section --
 app = Flask(__name__)
 app.jinja_env.globals['current_time'] = dt.datetime.now()
+app.secret_key = '_5#y2L"F4Q8z\n\xec]/'
 
 # -- Routes --
 @app.route('/')
@@ -26,6 +28,7 @@ def index():
 def welcome():
     form=request.form
     name= form["name"]
+    session["name"]=name
     return render_template('welcome.html', name=name)
 
 @app.route('/page1', methods=["POST", "GET"])
@@ -46,9 +49,17 @@ def page4():
 
 @app.route('/finish', methods=["POST", "GET"])
 def finish():
-    form=request.form
-    name= form["name"]
-    return render_template('finish.html', name=name)
+    data={
+        "name":session["name"]
+    }
+    return render_template('finish.html', data=data)
+
+@app.route('/results', methods=["POST", "GET"])
+def results():
+    data={
+        "name":session["name"]
+    }
+    return render_template('results.html', data=data)
 
 # @app.route('/pt1', methods=["GET"])
 # def pt1():
