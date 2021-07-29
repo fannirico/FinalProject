@@ -106,38 +106,59 @@ p {
 
 .patterns {
   height: 50vh;
-  margin-top: -130px;
-
+  margin-top: -70px;
 }
+
+
 
 svg text {
   font-family: Lora;
   letter-spacing: 10px;
-  stroke: #DBA2B4;
-  fill: #D4D2D2;
+  stroke: #BBDBD1;
+  fill: #BAA2AA;
   font-size: 100px;
   font-weight: 700;
   stroke-width: 3;
-  animation: textAnimate 5s;
-  
+  animation: textAnimate 15s alternate;
+  /* animation-delay: 6s; */
 }
 
-/* @keyframes textAnimate {
+@keyframes textAnimate {
   0% {
     stroke-dasharray: 0 50%;
     stroke-dashoffset:  20%;
-    fill:hsl(189, 68%, 75%);
+    stroke: #BBDBD1;
+    fill: #BAA2AA;
     opacity: 0;
+    
   }
-  50% {
-    opacity: 0;
+
+  30% {
+    opacity: 0; 
   }
   
   100% {
     stroke-dasharray: 50% 0;
     stroke-dashoffstet: -20%;
-    fill:#D4D2D2;
-  }
-} */
+    stroke: #BBDBD1;
+    fill: #BAA2AA;
+  } 
+}
 
-
+#delay {
+  animation-name: delay;
+  animation-duration:20s;
+  opacity: 1;
+  color:#BBDBD1;
+  font-size: 50px;
+  text-align: justify;
+  padding-bottom: -100px;
+}
+@keyframes delay{
+  0% {opacity: 0;}
+  20% {opacity: 0;}
+  40% {opacity: 0;}
+  60% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 1;}
+}
