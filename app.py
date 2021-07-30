@@ -21,7 +21,7 @@ app.secret_key = '_5#y2L"F4Q8z\n\xec]/'
 def index():
     data = {
     }
-    return render_template('index.html', data=data)
+    return render_template('results.html', data=data)
 
 
 @app.route('/welcome', methods=["POST"])
@@ -61,6 +61,6 @@ def results():
     }
     return render_template('results.html', data=data)
 
-# @app.route('/pt1', methods=["GET"])
-# def pt1():
-#     return render_template('pt1.html')
+@app.route('/opportunities', methods=["POST", "GET"])
+def opportunities():
+    return render_template('opp.html')

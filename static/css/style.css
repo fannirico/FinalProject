@@ -107,6 +107,7 @@ p {
 .patterns {
   height: 50vh;
   margin-top: -70px;
+  height:350px;
 }
 
 
@@ -155,6 +156,33 @@ svg text {
   padding-bottom: -100px;
 }
 @keyframes delay{
+  0% {opacity: 0;}
+  20% {opacity: 0;}
+  40% {opacity: 0;}
+  60% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+.opp{
+    border: #498370; 
+    border-color: #498370;
+    background-color: #589D86;
+    color: #BBDBD1;
+}
+.opp:hover {
+background-color: #6FAE99;
+transition-duration: .5s;
+}
+
+#mybutton {
+    padding-top: 30px;
+    padding-left: 1100px;
+    animation-name: mybutton;
+    animation-duration:20s;
+    opacity: 1;
+}
+@keyframes mybutton{
   0% {opacity: 0;}
   20% {opacity: 0;}
   40% {opacity: 0;}
