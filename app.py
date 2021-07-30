@@ -21,7 +21,7 @@ app.secret_key = '_5#y2L"F4Q8z\n\xec]/'
 def index():
     data = {
     }
-    return render_template('results.html', data=data)
+    return render_template('index.html', data=data)
 
 
 @app.route('/welcome', methods=["POST"])
